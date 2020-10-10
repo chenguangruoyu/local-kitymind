@@ -2,10 +2,10 @@
     var oldData;
     var html = '';
     html += '<a href="" class="diy export" data-type="json">导出json</a>',
-    html += '<a href="" class="diy export" data-type="md">导出md</a>',
+    // html += '<a href="" class="diy export" data-type="md">导出md</a>',
     html += '<a href="" class="diy export" data-type="km">导出km</a>',
-    html += '<a href="" class="diy export" data-type="svg">导出svg</a>',
-    html += '<a href="" class="diy export" data-type="txt">导出text</a>',
+    // html += '<a href="" class="diy export" data-type="svg">导出svg</a>',
+    // html += '<a href="" class="diy export" data-type="txt">导出text</a>',
     html += '<a href="" class="diy export" data-type="png">导出png</a>',
     html += '<button class="diy input">',
     html += '导入<input type="file" id="fileInput" accept=".km,.txt,.md,.json" >',
