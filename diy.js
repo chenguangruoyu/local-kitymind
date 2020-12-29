@@ -49,6 +49,7 @@
         opacity: 0
     });
 
+    // 导出
     $(document).on('click', '.export', function (event) {
         event.preventDefault();
         var $this = $(this),
@@ -189,12 +190,31 @@
             a.download = $('#node_text1').text() + '.' + type;
             console.log(a.download);
 
-            // 调用保存文件接口
+            // // 调用保存文件接口
+            // var url = "https://localhost:8080/";
+            // // var url = "";  
+            // var requestData = {
+            //     "fileName":a.download,
+            //     "fileData":content
+            // };
+            // request({
+            //     url: url,
+            //     method: "POST",
+            //     json: true,
+            //     headers: {
+            //         "content-type": "application/json",
+            //     },
+            //     body: JSON.stringify(requestData)
+            // }, function(error, response, body) {
+            //     if (!error && response.statusCode == 200) {
+            //     }
+            // }); 
 
-            // saveAs(blob, a.download); 需要导入FileSaver.js
+            // saveAs(blob, a.download); //需要导入FileSaver.js
 
-            // a.href = URL.createObjectURL(blob);
-            // a.click();
+            // 暂时实现为本地保存
+            a.href = URL.createObjectURL(blob);
+            a.click();
 
         });
     });
